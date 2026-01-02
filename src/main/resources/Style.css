@@ -1,0 +1,42 @@
+.light{
+ -fx-background-color:white;
+}
+
+.dark{
+ -fx-background-color:#222222;
+}
+
+.dark .hours ,
+.dark .minutes,
+.dark .seconds,
+.dark .points{
+ -fx-text-fill:white;
+ }
+.light .hours ,
+.light .minutes,
+.light .seconds,
+.light .points{
+ -fx-text-fill:black;
+ }
+
+.light .stop,
+.light .start,
+.light .reset,
+.light .transition{
+ -fx-text-fill:white;
+ -fx-background-color:#222222;
+ }
+.dark .stop,
+.dark .start,
+.dark .reset,
+.dark .transition{
+ -fx-text-fill:#222222;
+ -fx-background-color:white;
+ }
+
+.hours {
+ -fx-alignment: CENTER_LEFT;
+ }
+.seconds {
+  -fx-alignment: CENTER_RIGHT;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Pos.*?>
+
+<VBox fx:id="body"
+      styleClass="light"
+      spacing="10"
+      alignment="CENTER"
+      stylesheets="@Style.css"
+
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controler">
+<HBox spacing="5" alignment="CENTER">
+    <Label fx:id="Hours" styleClass="hours" text="0"/>
+    <Label text=":" styleClass="points"/>
+    <Label fx:id="Minutes" styleClass="minutes" text="0"/>
+    <Label text=":" styleClass="points"/>
+    <Label fx:id="Seconds" styleClass="seconds" text="0"/>
+</HBox>
+    <HBox spacing="5" alignment="CENTER">
+    <Button text="Start" onAction="#Start" styleClass="start" />
+
+    <Button text="Stop"  onAction="#Stop" styleClass="stop"/>
+
+    <Button text="Reset" onAction="#reset" styleClass="reset"/>
+
+    <Button fx:id="transition" text="Dark Mode" onAction="#transition" styleClass="transition"/>
+</HBox>
+</VBox>
